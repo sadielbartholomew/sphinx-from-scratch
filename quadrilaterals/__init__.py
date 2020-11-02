@@ -22,7 +22,9 @@ except ImportError as err:
 
 
 # Establish the namespace by importing classes of the module ...
-from .quadrilateral import Quadrilateral
+from .quadrilateral import (
+    Quadrilateral, FurtherInformationRequired, AngleInformationRequired
+)
 # ... and the sub-modules
 from .kites.kite import Kite
 from .kites.rhombi.rhombus import Rhombus
