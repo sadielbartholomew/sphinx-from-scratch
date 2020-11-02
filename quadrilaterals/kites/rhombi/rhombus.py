@@ -1,7 +1,7 @@
 from ..kite import Kite
+from ...parallelograms.parallelogram import Parallelogram
 
-
-class Rhombus(Kite):
+class Rhombus(Kite, Parallelogram):
     """
     Base class common to all rhombi.
     """

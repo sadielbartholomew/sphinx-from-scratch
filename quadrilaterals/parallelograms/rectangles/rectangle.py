@@ -1,10 +1,7 @@
 from ..parallelogram import Parallelogram
-from ...trapezia.isosceles_trapezia.isosceles_trapezium import (
-    IsoscelesTrapezium
-)
 
 
-class Rectangle(Parallelogram, IsoscelesTrapezium):
+class Rectangle(Parallelogram):
     """
     Base class common to all rectangles.
     """
