@@ -1,0 +1,16 @@
+\indexentry{Quadrilateral (class in quadrilaterals.quadrilateral)@\spxentry{Quadrilateral}\spxextra{class in quadrilaterals.quadrilateral}|hyperpage}{7}
+\indexentry{\_\_init\_\_() (quadrilaterals.quadrilateral.Quadrilateral method)@\spxentry{\_\_init\_\_()}\spxextra{quadrilaterals.quadrilateral.Quadrilateral method}|hyperpage}{7}
+\indexentry{Kite (class in quadrilaterals.kites.kite)@\spxentry{Kite}\spxextra{class in quadrilaterals.kites.kite}|hyperpage}{8}
+\indexentry{\_\_init\_\_() (quadrilaterals.kites.kite.Kite method)@\spxentry{\_\_init\_\_()}\spxextra{quadrilaterals.kites.kite.Kite method}|hyperpage}{8}
+\indexentry{Rhombus (class in quadrilaterals.kites.rhombi.rhombus)@\spxentry{Rhombus}\spxextra{class in quadrilaterals.kites.rhombi.rhombus}|hyperpage}{9}
+\indexentry{\_\_init\_\_() (quadrilaterals.kites.rhombi.rhombus.Rhombus method)@\spxentry{\_\_init\_\_()}\spxextra{quadrilaterals.kites.rhombi.rhombus.Rhombus method}|hyperpage}{9}
+\indexentry{Parallelogram (class in quadrilaterals.parallelograms.parallelogram)@\spxentry{Parallelogram}\spxextra{class in quadrilaterals.parallelograms.parallelogram}|hyperpage}{9}
+\indexentry{\_\_init\_\_() (quadrilaterals.parallelograms.parallelogram.Parallelogram method)@\spxentry{\_\_init\_\_()}\spxextra{quadrilaterals.parallelograms.parallelogram.Parallelogram method}|hyperpage}{9}
+\indexentry{Rectangle (class in quadrilaterals.parallelograms.rectangles.rectangle)@\spxentry{Rectangle}\spxextra{class in quadrilaterals.parallelograms.rectangles.rectangle}|hyperpage}{10}
+\indexentry{\_\_init\_\_() (quadrilaterals.parallelograms.rectangles.rectangle.Rectangle method)@\spxentry{\_\_init\_\_()}\spxextra{quadrilaterals.parallelograms.rectangles.rectangle.Rectangle method}|hyperpage}{10}
+\indexentry{Square (class in quadrilaterals.parallelograms.rectangles.square)@\spxentry{Square}\spxextra{class in quadrilaterals.parallelograms.rectangles.square}|hyperpage}{10}
+\indexentry{\_\_init\_\_() (quadrilaterals.parallelograms.rectangles.square.Square method)@\spxentry{\_\_init\_\_()}\spxextra{quadrilaterals.parallelograms.rectangles.square.Square method}|hyperpage}{10}
+\indexentry{Trapezium (class in quadrilaterals.trapezia.trapezium)@\spxentry{Trapezium}\spxextra{class in quadrilaterals.trapezia.trapezium}|hyperpage}{11}
+\indexentry{\_\_init\_\_() (quadrilaterals.trapezia.trapezium.Trapezium method)@\spxentry{\_\_init\_\_()}\spxextra{quadrilaterals.trapezia.trapezium.Trapezium method}|hyperpage}{11}
+\indexentry{IsoscelesTrapezium (class in quadrilaterals.trapezia.isosceles\_trapezia.isosceles\_trapezium)@\spxentry{IsoscelesTrapezium}\spxextra{class in quadrilaterals.trapezia.isosceles\_trapezia.isosceles\_trapezium}|hyperpage}{12}
+\indexentry{\_\_init\_\_() (quadrilaterals.trapezia.isosceles\_trapezia.isosceles\_trapezium.IsoscelesTrapezium method)@\spxentry{\_\_init\_\_()}\spxextra{quadrilaterals.trapezia.isosceles\_trapezia.isosceles\_trapezium.IsoscelesTrapezium method}|hyperpage}{12}

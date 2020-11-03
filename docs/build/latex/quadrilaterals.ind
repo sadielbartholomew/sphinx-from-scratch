@@ -1,0 +1,57 @@
+\begin{sphinxtheindex}
+\let\bigletter\sphinxstyleindexlettergroup
+\let\spxpagem \sphinxstyleindexpagemain
+\let\spxentry \sphinxstyleindexentry
+\let\spxextra \sphinxstyleindexextra
+
+  \bigletter {\sphinxsymbolsname}
+  \item \spxentry{\_\_init\_\_()}\spxextra{quadrilaterals.kites.kite.Kite method}, \hyperpage{8}
+  \item \spxentry{\_\_init\_\_()}\spxextra{quadrilaterals.kites.rhombi.rhombus.Rhombus method}, 
+		\hyperpage{9}
+  \item \spxentry{\_\_init\_\_()}\spxextra{quadrilaterals.parallelograms.parallelogram.Parallelogram method}, 
+		\hyperpage{9}
+  \item \spxentry{\_\_init\_\_()}\spxextra{quadrilaterals.parallelograms.rectangles.rectangle.Rectangle method}, 
+		\hyperpage{10}
+  \item \spxentry{\_\_init\_\_()}\spxextra{quadrilaterals.parallelograms.rectangles.square.Square method}, 
+		\hyperpage{10}
+  \item \spxentry{\_\_init\_\_()}\spxextra{quadrilaterals.quadrilateral.Quadrilateral method}, 
+		\hyperpage{7}
+  \item \spxentry{\_\_init\_\_()}\spxextra{quadrilaterals.trapezia.isosceles\_trapezia.isosceles\_trapezium.IsoscelesTrapezium method}, 
+		\hyperpage{12}
+  \item \spxentry{\_\_init\_\_()}\spxextra{quadrilaterals.trapezia.trapezium.Trapezium method}, 
+		\hyperpage{11}
+
+  \indexspace
+  \bigletter I
+  \item \spxentry{IsoscelesTrapezium}\spxextra{class in quadrilaterals.trapezia.isosceles\_trapezia.isosceles\_trapezium}, 
+		\hyperpage{12}
+
+  \indexspace
+  \bigletter K
+  \item \spxentry{Kite}\spxextra{class in quadrilaterals.kites.kite}, \hyperpage{8}
+
+  \indexspace
+  \bigletter P
+  \item \spxentry{Parallelogram}\spxextra{class in quadrilaterals.parallelograms.parallelogram}, 
+		\hyperpage{9}
+
+  \indexspace
+  \bigletter Q
+  \item \spxentry{Quadrilateral}\spxextra{class in quadrilaterals.quadrilateral}, \hyperpage{7}
+
+  \indexspace
+  \bigletter R
+  \item \spxentry{Rectangle}\spxextra{class in quadrilaterals.parallelograms.rectangles.rectangle}, 
+		\hyperpage{10}
+  \item \spxentry{Rhombus}\spxextra{class in quadrilaterals.kites.rhombi.rhombus}, \hyperpage{9}
+
+  \indexspace
+  \bigletter S
+  \item \spxentry{Square}\spxextra{class in quadrilaterals.parallelograms.rectangles.square}, 
+		\hyperpage{10}
+
+  \indexspace
+  \bigletter T
+  \item \spxentry{Trapezium}\spxextra{class in quadrilaterals.trapezia.trapezium}, \hyperpage{11}
+
+\end{sphinxtheindex}

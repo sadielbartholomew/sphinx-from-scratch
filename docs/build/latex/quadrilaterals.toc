@@ -1,0 +1,23 @@
+\babel@toc {english}{}
+\contentsline {chapter}{\numberline {1}Configuring Sphinx from scratch}{1}{chapter.1}
+\contentsline {section}{\numberline {1.1}Context}{1}{section.1.1}
+\contentsline {subsection}{\numberline {1.1.1}Demo format}{1}{subsection.1.1.1}
+\contentsline {subsection}{\numberline {1.1.2}The Dummy Project}{1}{subsection.1.1.2}
+\contentsline {section}{\numberline {1.2}Quick links}{3}{section.1.2}
+\contentsline {subsection}{\numberline {1.2.1}Examples of Sphinx\sphinxhyphen {}generated documentation}{3}{subsection.1.2.1}
+\contentsline {subsection}{\numberline {1.2.2}Sphinx}{4}{subsection.1.2.2}
+\contentsline {subsubsection}{Basic}{4}{subsubsection*.3}
+\contentsline {subsubsection}{Advanced}{4}{subsubsection*.4}
+\contentsline {subsubsection}{reStructuredText (\sphinxtitleref {.rst} extension) format}{4}{subsubsection*.5}
+\contentsline {subsubsection}{Documenting projects with Sphinx}{5}{subsubsection*.6}
+\contentsline {chapter}{\numberline {2}API}{7}{chapter.2}
+\contentsline {section}{\numberline {2.1}quadrilaterals.quadrilateral.Quadrilateral}{7}{section.2.1}
+\contentsline {section}{\numberline {2.2}quadrilaterals.kites.kite.Kite}{8}{section.2.2}
+\contentsline {section}{\numberline {2.3}quadrilaterals.kites.rhombi.rhombus.Rhombus}{9}{section.2.3}
+\contentsline {section}{\numberline {2.4}quadrilaterals.parallelograms.parallelogram.Parallelogram}{9}{section.2.4}
+\contentsline {section}{\numberline {2.5}quadrilaterals.parallelograms.rectangles.rectangle.Rectangle}{10}{section.2.5}
+\contentsline {section}{\numberline {2.6}quadrilaterals.parallelograms.rectangles.square.Square}{10}{section.2.6}
+\contentsline {section}{\numberline {2.7}quadrilaterals.trapezia.trapezium.Trapezium}{11}{section.2.7}
+\contentsline {section}{\numberline {2.8}quadrilaterals.trapezia.isosceles\_trapezia.isosceles\_trapezium.IsoscelesTrapezium}{12}{section.2.8}
+\contentsline {chapter}{\numberline {3}Indices and tables}{13}{chapter.3}
+\contentsline {chapter}{Index}{15}{section*.23}
