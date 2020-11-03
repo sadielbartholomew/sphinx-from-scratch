@@ -1,0 +1,428 @@
+
+
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>Configuring Sphinx from scratch &mdash; Quadrilaterals 1.0 documentation</title>
+  
+
+  
+  <link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+  <link rel="stylesheet" href="_static/copybutton.css" type="text/css" />
+
+  
+  
+  
+  
+
+  
+  <!--[if lt IE 9]>
+    <script src="_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+    
+      <script type="text/javascript" id="documentation_options" data-url_root="./" src="_static/documentation_options.js"></script>
+        <script src="_static/jquery.js"></script>
+        <script src="_static/underscore.js"></script>
+        <script src="_static/doctools.js"></script>
+        <script src="_static/language_data.js"></script>
+        <script src="_static/clipboard.min.js"></script>
+        <script src="_static/copybutton.js"></script>
+        <script src="_static/toggleprompt.js"></script>
+    
+    <script type="text/javascript" src="_static/js/theme.js"></script>
+
+    
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="next" title="API" href="api_reference.html" />
+    <link rel="prev" title="Documentation for Quadrilaterals" href="index.html" /> 
+</head>
+
+<body class="wy-body-for-nav">
+
+   
+  <div class="wy-grid-for-nav">
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+          
+
+          
+            <a href="index.html" class="icon icon-home" alt="Documentation Home"> Quadrilaterals
+          
+
+          
+          </a>
+
+          
+            
+            
+              <div class="version">
+                1.0
+              </div>
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <p class="caption"><span class="caption-text">Contents:</span></p>
+<ul class="current">
+<li class="toctree-l1 current"><a class="current reference internal" href="#">Configuring Sphinx from scratch</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#context">Context</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#demo-format">Demo format</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#the-dummy-project">The Dummy Project</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="#quick-links">Quick links</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#examples-of-sphinx-generated-documentation">Examples of Sphinx-generated documentation</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#sphinx">Sphinx</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="#basic">Basic</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#advanced">Advanced</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#restructuredtext-rst-extension-format">reStructuredText (<cite>.rst</cite> extension) format</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#documenting-projects-with-sphinx">Documenting projects with Sphinx</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="api_reference.html">API</a></li>
+</ul>
+
+            
+          
+        </div>
+        
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="index.html">Quadrilaterals</a>
+        
+      </nav>
+
+
+      <div class="wy-nav-content">
+        
+        <div class="rst-content">
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="index.html" class="icon icon-home"></a> &raquo;</li>
+        
+      <li>Configuring Sphinx from scratch</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+            
+            <a href="_sources/context.rst.txt" rel="nofollow"> View page source</a>
+          
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="configuring-sphinx-from-scratch">
+<h1>Configuring Sphinx from scratch<a class="headerlink" href="#configuring-sphinx-from-scratch" title="Permalink to this headline">¶</a></h1>
+<p>Version 1.0</p>
+<p><strong>A software demonstration by Sadie Bartholomew of the Sphinx documentation
+generator.</strong></p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>I am <em>not associated with the Sphinx project at all</em>. I have chosen
+to give a demo of Sphinx because it is a tool I have found extremely
+useful in my work in RSE roles.</p>
+</div>
+<div class="section" id="context">
+<h2>Context<a class="headerlink" href="#context" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="demo-format">
+<h3>Demo format<a class="headerlink" href="#demo-format" title="Permalink to this headline">¶</a></h3>
+<p>This is a demonstration so will be largely conducted in the terminal.
+However, notes are provided, as incoporated into the example documentation
+itself.</p>
+<div class="admonition tip">
+<p class="admonition-title">Tip</p>
+<p>The source and built documentation, which includes these notes,
+is (and will permanently remain) hosted on GitHub at:
+<a class="reference external" href="https://github.com/sadielbartholomew/sphinx-from-scratch">https://github.com/sadielbartholomew/sphinx-from-scratch</a></p>
+</div>
+</div>
+<div class="section" id="the-dummy-project">
+<h3>The Dummy Project<a class="headerlink" href="#the-dummy-project" title="Permalink to this headline">¶</a></h3>
+<p><code class="docutils literal notranslate"><span class="pre">quadrilaterals</span></code>: a very simple and trivial object-oriented Python codebase
+used as a placeholder for a real-life and very likely more complex project.</p>
+<p>The codebase models categories of two-dimensional four-sided shape, which
+are collectively called quadrilaterals. For each category, such as a
+square or a rhombus, there are methods to calculate the area, perimeter and
+number of axes of symmetry.</p>
+<p>A diagram <a class="footnote-reference brackets" href="#footnote1" id="id1">1</a> showing the main classes in the dummy project, and
+their inheritance hierarchy <a class="footnote-reference brackets" href="#footnote2" id="id2">2</a> :</p>
+<img alt="https://www.geogebra.org/resource/ncsc3adx/UDHJc4GCp82dcnjM/material-ncsc3adx.png" src="https://www.geogebra.org/resource/ncsc3adx/UDHJc4GCp82dcnjM/material-ncsc3adx.png" />
+<p>An example of the code in use (Python console notation):</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="kn">import</span> <span class="nn">quadrilaterals</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">square</span> <span class="o">=</span> <span class="n">quadrilaterals</span><span class="o">.</span><span class="n">Square</span><span class="p">(</span><span class="mi">5</span><span class="p">)</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">square</span><span class="o">.</span><span class="n">area</span><span class="p">()</span>
+<span class="go">25</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">square</span><span class="o">.</span><span class="n">perimeter</span><span class="p">()</span>
+<span class="go">20</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">help</span><span class="p">(</span><span class="n">square</span><span class="p">)</span>
+<span class="go">Help on Square in module quadrilaterals.parallelograms.rectangles.square object:</span>
+
+<span class="go">class Square(quadrilaterals.parallelograms.rectangles.rectangle.Rectangle, quadrilaterals.kites.rhombi.rhombus.Rhombus)</span>
+<span class="go"> |  Square(side_length)</span>
+<span class="go"> |</span>
+<span class="go"> |  Base class common to all squares.</span>
+<span class="go"> |</span>
+<span class="go"> |  &gt;&gt;&gt; import quadrilaterals</span>
+<span class="go"> |  &gt;&gt;&gt; q = quadrilaterals.Square(0.2)</span>
+<span class="go"> |</span>
+<span class="go"> |  Method resolution order:</span>
+<span class="go"> |      Square</span>
+<span class="go"> |      quadrilaterals.parallelograms.rectangles.rectangle.Rectangle</span>
+<span class="go"> |      quadrilaterals.kites.rhombi.rhombus.Rhombus</span>
+<span class="go"> |      quadrilaterals.kites.kite.Kite</span>
+<span class="go"> |      quadrilaterals.parallelograms.parallelogram.Parallelogram</span>
+<span class="go"> |      quadrilaterals.quadrilateral.Quadrilateral</span>
+<span class="go"> |      builtins.object</span>
+<span class="go"> |</span>
+<span class="gp">...</span>
+<span class="gp">...</span>
+<span class="gp">...</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">parallelogram</span> <span class="o">=</span> <span class="n">quadrilaterals</span><span class="o">.</span><span class="n">Parallelogram</span><span class="p">(</span><span class="mi">5</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mf">1.5</span><span class="p">)</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">help</span><span class="p">(</span><span class="n">parallelogram</span><span class="p">)</span>
+<span class="go">Help on Parallelogram in module quadrilaterals.parallelograms.parallelogram object:</span>
+
+<span class="go">class Parallelogram(quadrilaterals.quadrilateral.Quadrilateral)</span>
+<span class="go"> |  Parallelogram(parallel_side_A_length, parallel_side_B_length, any_angle=None)</span>
+<span class="go"> |</span>
+<span class="go"> |  Base class common to all parallelograms.</span>
+<span class="go"> |</span>
+<span class="go"> |  &gt;&gt;&gt; import math</span>
+<span class="go"> |  &gt;&gt;&gt; q1 = quadrilaterals.Parallelogram(2, 5, 1.1)</span>
+<span class="go"> |  &gt;&gt;&gt; q2 = quadrilaterals.Parallelogram(2, 5, math.pi - 1.1)</span>
+<span class="go"> |</span>
+<span class="go"> |  Method resolution order:</span>
+<span class="go"> |      Parallelogram</span>
+<span class="go"> |      quadrilaterals.quadrilateral.Quadrilateral</span>
+<span class="go"> |      builtins.object</span>
+<span class="go"> |</span>
+<span class="gp">...</span>
+<span class="gp">...</span>
+<span class="gp">...</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">parallelogram</span><span class="o">.</span><span class="n">area</span><span class="p">()</span>
+<span class="go">9.974949866040545</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">parallelogram</span><span class="o">.</span><span class="n">perimeter</span><span class="p">()</span>
+<span class="go">14</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="section" id="quick-links">
+<h2>Quick links<a class="headerlink" href="#quick-links" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="examples-of-sphinx-generated-documentation">
+<h3>Examples of Sphinx-generated documentation<a class="headerlink" href="#examples-of-sphinx-generated-documentation" title="Permalink to this headline">¶</a></h3>
+<p>It is hard to tell what has been made with Sphinx without looking at the
+codebase source, but often if you scroll to the bottom of some
+documentation you can often see a “Created using Sphinx &lt;sphinx version&gt;”
+note in the footer. A small number of examples are referenced below.</p>
+<ul class="simple">
+<li><p>A large but absolutely not comprehensive listing collected by the Sphinx
+team: <a class="reference external" href="https://www.sphinx-doc.org/en/master/examples.html">https://www.sphinx-doc.org/en/master/examples.html</a></p></li>
+<li><p>Sphinx’s own documentation (made with Sphinx, of course!):
+<a class="reference external" href="https://www.sphinx-doc.org/en/master/">https://www.sphinx-doc.org/en/master/</a></p></li>
+<li><p>Python 3 documentation: <a class="reference external" href="https://docs.python.org/3/">https://docs.python.org/3/</a></p></li>
+<li><p>Python 2 documentation: <a class="reference external" href="https://docs.python.org/3/">https://docs.python.org/3/</a></p></li>
+<li><p>Tornado documentation: <a class="reference external" href="https://www.tornadoweb.org/en/stable/">https://www.tornadoweb.org/en/stable/</a></p></li>
+<li><p>Official RST documentation (note it is also made in Sphinx):
+<a class="reference external" href="https://docutils.readthedocs.io/en/sphinx-docs/user/rst/quickstart.html">https://docutils.readthedocs.io/en/sphinx-docs/user/rst/quickstart.html</a></p></li>
+<li><p>Dask documentation: <a class="reference external" href="https://docs.dask.org/en/latest/">https://docs.dask.org/en/latest/</a></p></li>
+<li><p>JupyterHub documentation: <a class="reference external" href="https://jupyterhub.readthedocs.io/en/stable/">https://jupyterhub.readthedocs.io/en/stable/</a></p></li>
+<li><p>NumPy documentation: <a class="reference external" href="https://numpy.org/doc/stable/reference/">https://numpy.org/doc/stable/reference/</a></p></li>
+<li><p>A small (slightly old) listing of non-Python projects with Sphinx
+documentation:
+<a class="reference external" href="https://ericholscher.com/blog/2014/feb/11/sphinx-isnt-just-for-python/">https://ericholscher.com/blog/2014/feb/11/sphinx-isnt-just-for-python/</a></p></li>
+<li><p>An example of a book made with Sphinx: <a class="reference external" href="https://www.theoretical-physics.net/">https://www.theoretical-physics.net/</a></p></li>
+</ul>
+</div>
+<div class="section" id="sphinx">
+<h3>Sphinx<a class="headerlink" href="#sphinx" title="Permalink to this headline">¶</a></h3>
+<div class="section" id="basic">
+<h4>Basic<a class="headerlink" href="#basic" title="Permalink to this headline">¶</a></h4>
+<ul class="simple">
+<li><p>Sphinx documentation homepage: <a class="reference external" href="https://www.sphinx-doc.org/en/master/">https://www.sphinx-doc.org/en/master/</a></p></li>
+<li><p>Quick start including <cite>sphinx-quickstart</cite> command:
+<a class="reference external" href="https://www.sphinx-doc.org/en/master/usage/quickstart.html">https://www.sphinx-doc.org/en/master/usage/quickstart.html</a></p></li>
+<li><p>HTML themes: <a class="reference external" href="https://www.sphinx-doc.org/en/master/usage/theming.html">https://www.sphinx-doc.org/en/master/usage/theming.html</a></p></li>
+</ul>
+</div>
+<div class="section" id="advanced">
+<h4>Advanced<a class="headerlink" href="#advanced" title="Permalink to this headline">¶</a></h4>
+<ul class="simple">
+<li><p>Guidance on extensions:
+<a class="reference external" href="https://www.sphinx-doc.org/en/master/usage/extensions/index.html">https://www.sphinx-doc.org/en/master/usage/extensions/index.html</a></p></li>
+<li><p>An “awesome” listing of extra Sphinx resources:
+<a class="reference external" href="https://github.com/yoloseem/awesome-sphinxdoc">https://github.com/yoloseem/awesome-sphinxdoc</a></p></li>
+<li><p>Big listing of even more HTML themes: <a class="reference external" href="https://sphinx-themes.org/">https://sphinx-themes.org/</a></p></li>
+<li><p>Our customisation of the “alabaster” default theme, in practice:
+<a class="reference external" href="https://ncas-cms.github.io/cf-python/">https://ncas-cms.github.io/cf-python/</a></p></li>
+<li><p>Example Sphinx extension project repositories:</p>
+<ul>
+<li><p><code class="docutils literal notranslate"><span class="pre">sphinx-copybutton</span></code> (button to copy code in code examples):
+<a class="reference external" href="https://github.com/executablebooks/sphinx-copybutton">https://github.com/executablebooks/sphinx-copybutton</a></p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">sphinx-toggleprompt</span></code> (button to hide prompts and outputs in
+console-like code examples):
+<a class="reference external" href="https://github.com/jurasofish/sphinx-toggleprompt">https://github.com/jurasofish/sphinx-toggleprompt</a></p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">sphinx-pyreverse</span></code> (generates UML diagramms of the code or parts of
+it into the documentation): <a class="reference external" href="https://github.com/alendit/sphinx-pyreverse">https://github.com/alendit/sphinx-pyreverse</a></p></li>
+</ul>
+</li>
+</ul>
+</div>
+<div class="section" id="restructuredtext-rst-extension-format">
+<h4>reStructuredText (<cite>.rst</cite> extension) format<a class="headerlink" href="#restructuredtext-rst-extension-format" title="Permalink to this headline">¶</a></h4>
+<ul class="simple">
+<li><p>Official reStructuredText documentation (note it is also made in Sphinx):
+<a class="reference external" href="https://docutils.readthedocs.io/en/sphinx-docs/user/rst/quickstart.html">https://docutils.readthedocs.io/en/sphinx-docs/user/rst/quickstart.html</a></p></li>
+<li><p>Helpful cheatseets:</p>
+<ul>
+<li><p><a class="reference external" href="https://docutils.sourceforge.io/docs/user/rst/quickref.html">https://docutils.sourceforge.io/docs/user/rst/quickref.html</a></p></li>
+<li><p><a class="reference external" href="https://github.com/ralsina/rst-cheatsheet/blob/master/rst-cheatsheet.rst">https://github.com/ralsina/rst-cheatsheet/blob/master/rst-cheatsheet.rst</a></p></li>
+</ul>
+</li>
+</ul>
+</div>
+<div class="section" id="documenting-projects-with-sphinx">
+<h4>Documenting projects with Sphinx<a class="headerlink" href="#documenting-projects-with-sphinx" title="Permalink to this headline">¶</a></h4>
+<ul class="simple">
+<li><p>A nice blog post: <a class="reference external" href="https://medium.com/&#64;richdayandnight/a-simple-tutorial-on-how-to-document-your-python-project-using-sphinx-and-rinohtype-177c22a15b5b">https://medium.com/&#64;richdayandnight/a-simple-tutorial-on-how-to-document-your-python-project-using-sphinx-and-rinohtype-177c22a15b5b</a></p></li>
+<li><p>A great post showing how to use Sphinx with other tools to document a C++
+project: <a class="reference external" href="https://devblogs.microsoft.com/cppblog/clear-functional-c-documentation-with-sphinx-breathe-doxygen-cmake/">https://devblogs.microsoft.com/cppblog/clear-functional-c-documentation-with-sphinx-breathe-doxygen-cmake/</a></p></li>
+</ul>
+<dl class="footnote brackets">
+<dt class="label" id="footnote1"><span class="brackets"><a class="fn-backref" href="#id1">1</a></span></dt>
+<dd><p>Image sourced from <a class="reference external" href="https://www.geogebra.org/m/bm4ja4wb">this webpage</a>.</p>
+</dd>
+<dt class="label" id="footnote2"><span class="brackets"><a class="fn-backref" href="#id2">2</a></span></dt>
+<dd><p>Strictly this diagram does not capture one other
+relationship between the quadrilaterals which also exists, and which the
+dummy project incorporates into the class hierarchy, namely that a
+<em>rhombus</em> is a special form of <em>kite</em>.</p>
+</dd>
+</dl>
+</div>
+</div>
+</div>
+</div>
+
+
+           </div>
+           
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="api_reference.html" class="btn btn-neutral float-right" title="API" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
+      
+      
+        <a href="index.html" class="btn btn-neutral float-left" title="Documentation for Quadrilaterals" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        
+        &copy; Copyright 2020, Sadie
+
+    </p>
+  </div>
+    
+    
+    
+    Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a
+    
+    <a href="https://github.com/rtfd/sphinx_rtd_theme">theme</a>
+    
+    provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script>
+
+  
+  
+    
+   
+
+</body>
+</html>
