@@ -3,6 +3,21 @@ quadrilaterals
 
 A dummy object-oriented codebase in Python modelling
 categories of two-dimensional four-sided shape.
+
+An example of creating an instance of each of the main classes available
+in the Quadrilaterals API:
+
+>>> import quadrilaterals
+>>> quadrilateral = quadrilaterals.Quadrilateral(4, 6, 5, 8)
+
+>>> square = quadrilaterals.Square(4)
+>>> rhombus = quadrilaterals.Rhombus(4)
+>>> rectangle = quadrilaterals.Rectangle(4, 6)
+>>> kite = quadrilaterals.Kite(4, 6)
+>>> parallelogram = quadrilaterals.Parallelogram(4, 3)
+>>> isosceles_trapezium = quadrilaterals.IsoscelesTrapezium(4, 3, 8)
+>>> trapezium = quadrilaterals.Trapezium(4, 3, 8, 2)
+
 '''
 
 import datetime
